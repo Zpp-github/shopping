@@ -1,0 +1,210 @@
+/* 注册页的样式文件 */
+/* 版心 */
+.com {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 盒子左浮动 */
+.fl {
+    float: left;
+}
+/* 盒子右浮动 */
+.fr {
+    float: right;
+}
+/* 红色字体 */
+.style_red {
+    color: #c81623;
+}
+
+
+
+/* 头部header */
+.header {
+    position: relative;
+    height: 88px;
+    border-bottom: 1px solid #b1191a;
+}
+.header .logo {
+    /* logo模块 */
+    width: 175px;
+    height: 56px;
+    margin-top: 18px;
+}
+.header .logo a {
+/* logo链接，让其可以返回首页 */
+    display: block;
+    width: 175px;
+    height: 56px;
+    background-image: no-repeat;
+}
+
+/* 注册页面主体模块 */
+.registerarea {
+    height: 750px;
+    margin-top: 25px;
+    border: 1px solid #dfdfdf;
+}
+
+/* 注册头部 */
+.registerarea .title {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+    background-color: #ececec;
+    line-height: 40px;
+}
+.registerarea .title h3 {
+    float: left;
+    margin-left: 10px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+.registerarea .title  span{
+    float: right;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* 注册内容 */
+.registerarea .reg_form {
+    width: 558px;
+    height: 400px;
+    margin: 100px auto 0;
+}
+.registerarea .reg_form label {
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    font-size: 14px;
+    color: #4c4c4c;
+    line-height: 36px;
+    text-align: right;
+}
+.registerarea .reg_form li {
+    margin-bottom: 30px;
+}
+.registerarea .reg_form input {
+    width: 241px;
+    height: 36px;
+    border: 1px solid #999;
+}
+
+.registerarea .reg_form span {
+/* 输入信息报备 */
+    margin-top: -2px;
+    margin-left: 5px;
+}
+.registerarea .reg_form .error {
+    color: #df3033;
+}
+.registerarea .reg_form .true {
+    color: #40b83f;
+}
+
+/* 密码的安全等级 */
+.registerarea .reg_form .safejudge {
+    margin-top: 10px;
+    margin-left: 180px;
+}
+.registerarea .reg_form .safejudge h5{
+/* 标题 “安全程度” */
+    margin-right: 10px;
+    color: #b2b2b2;
+}
+.registerarea .reg_form .safejudge li {
+/* 安全等级样式 */
+    width: 34px;
+    line-height: 13px;
+    margin: 3px 1px 0 0;
+    color: #fff;
+    text-align: center;
+}
+.registerarea .reg_form .safejudge .weak {
+/* 安全等级——弱 */
+    background-color: #de1111;
+}
+.registerarea .reg_form .safejudge .medium {
+/* 安全等级——中 */
+    background-color: #40b83f;
+}
+.registerarea .reg_form .safejudge .strength {
+/* 安全等级——强 */
+    background-color: #f79100;
+}
+
+.registerarea .reg_form a {
+/* 《用户协议》 */
+    color: #1ba1e6;
+}
+
+/* input复选框样式 */
+.registerarea .reg_form input[type="checkbox"] {
+    position: relative;
+    width: 16px;
+    height: 15px;
+    margin-left: 110px;
+    line-height: 14px;
+    text-align: center;
+}
+.registerarea .reg_form input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #999;
+    vertical-align: middle;
+}
+.registerarea .reg_form input[type="checkbox"]:checked::before {
+    content: "\2713";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-weight: 700;
+    background-color: #f2f2f2;
+    color: #1fa3e6;
+}
+
+/* input提交按钮样式 */
+.registerarea .reg_form input[type="submit"] {
+    width: 200px;
+    height: 34px;
+    margin: 30px 0 0 120px;
+    border: none;
+    background-color: #c81623;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* footer 底部模块 */
+.footer {
+    height: 130px;
+    background-color: transparent;
+    padding-top: 15px;
+    text-align: center;
+}
+.footer .mod_copyright ul {
+    margin-left: 119px;
+}
+.footer .mod_copyright ul li {
+    float: left;
+    margin-top: 16px;
+}
+.footer .mod_copyright ul li:nth-child(2n) {
+/* 第偶数个li是 | */
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 20px 15px 0;
+}
+.footer .copyright {
+    margin-top: 15px;
+    margin-left: 242px;
+}
+
+/* df3033 */

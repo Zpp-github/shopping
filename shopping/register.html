@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 网站标题 -->
+    <title>品优购注册页</title>
+    <!-- 网站标题 -->
+    <meta name="description" content="品优购-专业的综合网上购物商城,销售家电、数码通讯、电脑、
+    家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!"/>
+    <!-- 关键字 -->
+    <meta name="keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,
+    手表,存储卡,品优购" />
+    <!-- 引入初始化样式文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入专有样式文件 -->
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <!-- 头部header始 -->
+    <header class="header com">
+        <!-- logo模块 -->
+        <div class="logo fl">
+            <a href="index.html" title="返回首页"><img src="images/logo.png" alt=""></a>
+        </div>
+    </header>
+    <!-- 头部header止 -->
+
+    <!-- 注册页面主体模块始 -->
+    <div class="registerarea com">
+        <!-- 注册头部 -->
+        <div class="title">
+            <h3>注册新用户</h3>
+            <span>我有账号，去<a href="login.html" class="style_red">登陆</a></span>
+        </div>
+        <!-- 注册内容 -->
+        <div class="reg_form">
+            <ul>
+                <form action="" method="POST" name="register">
+                    <li>
+                        <label for="">手机号 ：</label>
+                        <input type="text" />
+                        <span class="error">
+                            <img src="images/error.png" alt="">
+                            手机号码格式不正确，请重新输入
+                        </span>
+                    </li>
+                    <li>
+                        <label for="">短信验证码 ：</label>
+                        <input type="text" />
+                    </li>
+                    <li>
+                        <label for="">登陆密码 ：</label>
+                        <input type="text" />
+                        <span class="true">
+                            <img src="images/true.png" alt="">
+                            恭喜您，输入正确
+                        </span>
+                        <!-- 密码的安全等级 -->
+                        <div class="safejudge clearfix">
+                            <h5 class="fl">安全程度</h5>
+                            <ul>
+                                <li class="weak fl">弱</li>
+                                <li class="medium fl">中</li>
+                                <li class="strength fl">强</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="">确认密码 ：</label>
+                        <input type="text" />
+                        <span class="error">
+                            <img src="images/error.png" alt="">
+                            密码不一致，请重新输入
+                        </span>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="btn1">
+                            &emsp;<label for="btn1">同意协议并注册</label>
+                        </input>
+                        &ensp;<a href="#">《用户协议》</a>
+                    </li>
+                    <li>
+                        <input type="submit" value="完成注册" />
+                    </li>
+                </form>
+            </ul>
+        </div>
+    </div>
+    <!-- 注册页面主体模块止 -->
+
+    <!-- footer 底部模块始 -->
+    <footer class="footer">
+        <!-- 版权模块 -->
+        <div class="mod_copyright com">
+            <ul>
+                <li><a href="#">关于我们</a></li>
+                <li></li>
+                <li><a href="#">联系我们</a></li>
+                <li></li>
+                <li><a href="#">联系客服</a></li>
+                <li></li>
+                <li><a href="#">商家入驻</a></li>
+                <li></li>
+                <li><a href="#">营销中心</a></li>
+                <li></li>
+                <li><a href="#">手机品优购</a></li>
+                <li></li>
+                <li><a href="#">友情链接</a></li>
+                <li></li>
+                <li><a href="#">销售联盟</a></li>
+                <li></li>
+                <li><a href="#">品优购社区</a></li>
+                <li></li>
+                <li><a href="#">品优购公益</a></li>
+                <li></li>
+                <li><a href="#">English Site</a></li>
+                <li></li>
+                <li><a href="#">Contact U</a></li>
+            </ul>
+            <div class="copyright fl">
+                地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn
+                <br/>京ICP备08001421号京公网安备110108007702
+            </div>
+        </div>
+    </footer>
+    <!-- footer 底部模块止 -->
+</body>
+</html>

@@ -1,0 +1,492 @@
+/* 详情页的样式文件 */
+
+.nav .dropdown {
+    overflow: hidden;
+}
+
+
+
+/* 面包屑导航 */
+.de_container .crumb_wrap li {
+    display: inline-block;
+    font-size: 12px;
+    margin: 25px 15px 0;
+}
+
+
+
+/* 产品介绍模块 */
+.preview_wrap {
+    width: 400px;
+}
+.preview_wrap .preview_img {
+/* 图片预览 */
+    width: 100%;
+    border: 1px solid #ededed;
+    margin: 5px 0 63px;
+}
+.preview_wrap .preview_list {
+/* 预览列表 */
+    position: relative;
+    height: 60px;
+}
+.preview_wrap .preview_list .list_item {
+    width: 300px;
+    height: 100%;
+    margin: 0 auto;
+}
+.preview_wrap .preview_list .list_item li img {
+    float: left;
+    width: 60px;
+    height: 100%;
+    border: 1px solid transparent;
+    transition: all .3s;
+}
+.preview_wrap .preview_list .list_item li.current img,
+.preview_wrap .preview_list .list_item li img:hover {
+    border: 1px solid #c81623;
+}
+.preview_wrap .preview_list .list_item .arrow_prev,
+.preview_wrap .preview_list .list_item .arrow_next {
+    position: absolute;
+    width: 20px;
+    height: 33px;
+    top: 12px;
+}
+.preview_wrap .preview_list .list_item .arrow_prev {
+    left: 0;
+    background: url(../upload/arrow_prev.png) no-repeat;
+}
+.preview_wrap .preview_list .list_item .arrow_next {
+    right: 0;
+    background: url(../upload/arrow_next.png) no-repeat;
+}
+.preview_wrap .info {
+/* 手机编号分享关注对比 */
+    margin-top: 25px;
+}
+.preview_wrap .info button {
+    font-family: 'icomoon';
+    margin-left: 28px;
+    color: #666;
+    font-size: 12px;
+}
+.preview_wrap .info button span {
+    color: #d7555f;
+}
+.preview_wrap .info button:hover {
+    color: #c81623
+}
+.preview_wrap .info input[type="checkbox"] {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    margin-left: 28px;
+    line-height: 5px;
+    text-align: center;
+}
+.preview_wrap .info input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+.preview_wrap .info input[type="checkbox"]:checked::before {
+    content: "\2713";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #d7555f;
+    background-color: #d7555f;
+    color: #fff;
+}
+
+.itemInfo_wrap {
+/* 产品详细信息模块 */
+    width: 718px;
+}
+.itemInfo_wrap .sku_name {
+/* 头部 */
+    font-size: 16px;
+    color: #333;
+}
+.itemInfo_wrap .news {
+/* 最新新闻 */
+    color: #e12228;
+    margin: 10px 0;
+}
+/* 产品详细摘要 */
+.itemInfo_wrap .summary dl {
+    /* 为了清除浮动 */
+    overflow: hidden;
+}
+.itemInfo_wrap .summary dt {
+    width: 68px;
+    text-align: center;
+    margin: 9px 0;
+}
+.itemInfo_wrap .summary dt,
+.itemInfo_wrap .summary dd {
+    float: left;
+}
+.itemInfo_wrap .summary .summary_price,
+.itemInfo_wrap .summary .summary_promotion {
+/* 价格摘要 */
+/* 促销摘要 */
+    position: relative;
+    padding: 5px 0 0;
+    background-color: #fee9eb;
+}
+.itemInfo_wrap .summary .summary_price dd .price {
+    font-size: 24px;
+    color: #e12228;
+}
+.itemInfo_wrap .summary .summary_price dd a {
+    color: #c81623;
+}
+.itemInfo_wrap .summary .summary_price .remark {
+    /* 浮动无法实现，故采用定位 */
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    color: #999;
+}
+.itemInfo_wrap .summary .summary_price .remark em {
+    color: #1474af;
+}
+
+.itemInfo_wrap .summary .summary_promotion dd {
+    width: 565px;
+    color: #999;
+    line-height: 33px;
+}
+.itemInfo_wrap .summary .summary_promotion dd em {
+    display: inline-block;
+    width: 42px;
+    height: 22px;
+    margin-right: 7px;
+    color: #fff;
+    background-color: #c81623;
+    text-align: center;
+    line-height: 22px;
+}
+.summary_support dd {
+/* 支持 */
+    font-family: 'icomoon';
+    line-height: 38px;
+    color: #999;
+}
+.summary_stock dd {
+/* 配送至 */
+    font-family: 'icomoon';
+    color: #999;
+    line-height: 28px;
+    margin-top: 3px;
+}
+
+.choose {
+/* 选择 */
+    width: 545px;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    padding: 8px 0 13px 0;
+}
+.choose dl {
+    margin-top: 7px;
+}
+.choose a{
+    display: inline-block;
+    margin-right: 5px;
+    border:1px solid #ededed;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+}
+.choose a:hover,
+.choose .current{
+    border-color: #c81623;
+}
+.choose .choose_color a {
+    width: 82px;
+    height: 43px;
+    line-height: 43px;
+}
+.choose .choose_version a {
+    width: 64px;
+    height: 34px;
+    line-height: 34px;
+}
+.choose .choose_capacity a {
+    width: 60px;
+    height: 35px;
+    line-height: 30px;
+}
+.choose .choose_type a {
+    width: 76px;
+    height: 34px;
+    line-height: 34px;
+}
+.choose .choose_suit a {
+    width: 76px;
+    height: 34px;
+    line-height: 34px;
+}
+
+.choose_btns {
+/* 选择按钮组 */
+    height: 60px;
+    padding: 7px 0;
+}
+.choose_btns .choose_amount {
+/* 选择数量 */
+    position: relative;
+    width: 47px;
+    height: 45px;
+}
+.choose_btns .choose_amount input {
+    width: 33px;
+    height: 45px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.choose_btns .choose_amount .add,
+.choose_btns .choose_amount .reduce {
+    position: absolute;
+    right: 0;
+    width: 15px;
+    height: 23px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.choose_btns .choose_amount .add {
+    top: 0;
+}
+.choose_btns .choose_amount .reduce {
+    bottom: 0;
+    /* 禁止符号 */
+    cursor: not-allowed;
+}
+.choose_btns .addshopcar {
+/* 加入购物车 */
+    display: inline-block;
+    width: 142px;
+    height: 46px;
+    margin-left: 10px;
+    color: #dddddd;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #c81623;
+    line-height: 46px;
+    text-align: center;
+}
+
+
+
+/* 产品细节模块 */
+.product_detail {
+    margin-top: 22px;
+    margin-bottom: 30px;
+}
+
+.aside {
+    width: 208px;
+    border: 1px solid #ddd;
+}
+.aside .tab_list {
+/* tab栏切换布局 */
+    position: relative;
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+}
+.aside .tab_list li {
+    position: absolute;
+    top: 0;
+    width: 104px;
+    height: 33px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+}
+.aside .tab_list li:first-child {
+    left: 0;
+}
+.aside .tab_list li:last-child {
+    right: 0;
+}
+.aside .tab_list .current {
+    color: #c81623;
+    border: transparent;
+    background-color: transparent;
+}
+
+.tab_con {
+/* 与 tab_list 里面的li对应 */
+    width: 186px;
+    margin: 0 11px;
+}
+.tab_con li {
+    float: left;
+    width: 92px;
+    height: 30px;
+    color: #333;
+    line-height: 30px;
+    border-bottom: 1px dotted #ccc;
+}
+.tab_con li:first-child,
+.tab_con li:nth-child(2) {
+    border-bottom-width: 2px;
+}
+.tab_con li:nth-child(n+9) {
+    border-bottom: none;
+}
+
+.aside .recom {
+/* 推荐商品 */
+    padding: 0 10px;
+    font-size: 14px;
+    color: #333;
+}
+.aside .recom h4{
+/* 推荐商品标题 */
+    height: 36px;
+    border-bottom: 1px solid #ededed;
+    font-weight: 400;
+    line-height: 36px;
+}
+.aside .recom img {
+    margin: 6px 0;
+}
+.aside .recom h5 {
+    font-size: 14px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.aside .recom em {
+    font-weight: 700;
+}
+.aside .recom button {
+    display: block;
+    width: 90px;
+    height: 28px;
+    margin: 3px 40px 20px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    line-height: 26px;
+    transition: all .3s;
+}
+.aside .recom button:hover {
+    background-color: #ddd;
+}
+.aside .recom ul {
+    border-bottom: 1px solid #ddd;
+}
+
+.detail {
+/* 手机细节 */
+    width: 980px;
+}
+.detail .detail_tab_list {
+/* tab栏切换布局 */
+    height: 42px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+    color: #333;
+}
+.detail .detail_tab_list li {
+    display: inline-block;
+    height: 41px;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 41px;
+    box-sizing: content-box;
+    cursor: pointer;
+    transition: all .3s;
+}
+.detail .detail_tab_list .current {
+    background-color: #c81623;
+    color: #fff;
+}
+
+.detail .detail_tab_con {
+    padding: 24px 0 0 18px;
+}
+.detail .detail_tab_con .item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 16px;
+}
+.detail .detail_tab_con .item .item_info li {
+    line-height: 22px;
+}
+.detail .detail_tab_con .item .more {
+    float: right;
+    color: #333;
+    font-weight: 700;
+}
+.detail .detail_tab_con .item .more::after {
+    content: '\e900';
+    margin-left: 5px;
+}
+
+
+
+/* 猜你喜欢模块 */
+.like {
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+
+.like .like_hd {
+/* 猜你喜欢模块头部 */
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+}
+.like .like_hd h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+
+.like ul {
+/* 猜你喜欢模块内容 */
+    height: 295px;
+    border: 1px solid #ededed;
+}
+.like ul li {
+    float: left;
+    width: 199px;
+    padding-top: 15px;
+    padding-left: 35px;
+}
+.like ul li .detail {
+/* 图片介绍 */
+    display: inline-block;
+    width: 126px;
+    margin-top: 9px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #df3033;
+}
+.like ul li .detail p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #666;
+}
+.like ul li .detail p:hover {
+    color: #c81623
+}
+
+.like ul li em {
+    display: block;
+    margin-top: 30px;
+}

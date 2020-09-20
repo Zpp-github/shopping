@@ -1,0 +1,73 @@
+﻿* {
+    /* 清除内边距、外边距 */
+    margin: 0;
+    padding: 0;
+    /* 盒子大小为 width，padding和border不会撑大盒子 */
+    box-sizing: border-box;
+}
+/* 斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal
+}
+/* 清除li的列表样式 */
+li {
+    list-style: none
+}
+
+img {
+    /* 清除图片边框，照顾低版本浏览器，如果图片外面包含了链接会有边框问题 */
+    border: none;
+    /* 清除图片底侧有空白缝隙的问题 */
+    vertical-align: middle;
+}
+/* 当鼠标经过button时，鼠标变成小手形状 */
+button {
+    cursor: pointer;
+    background-color: transparent;
+}
+input[type=checkbox] {
+    cursor: pointer;
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #c81623
+}
+
+button,
+input {
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    /* 去掉默认的灰色边框 */
+    border: 0;
+    outline: none;
+}
+
+body {
+    /* css3抗锯齿形，让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    /* \5B8B\4F53  宋体 避免浏览器解析CSS代码时候出现乱码的问题 */
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666;
+}
+/* 将相应元素隐藏 */
+.hide,
+.none {
+    display: none
+}
+/* 哪里需要清除浮动，就给哪个标签添加 class="clearfix"  */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+.clearfix {
+    *zoom: 1
+}

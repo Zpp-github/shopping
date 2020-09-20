@@ -1,0 +1,181 @@
+/* 列表页的css */
+
+/* 秒杀模块 */
+.header .sk {
+    position: absolute;
+    top: 40px;
+    left: 185px;
+    height: 32px;
+    border-left: 1px solid #b1191a;
+    padding: 3px 0 0 15px;
+}
+
+
+
+/* 导航模块 */
+.nav li {
+    float: left;
+}
+.nav .sk_list li {
+    margin: 0 28px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    line-height: 47px;
+}
+.nav .sk_con li {
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 45px;
+    /* line-height: 47px; 会使文字偏上*/
+    line-height: 49px;
+}
+.nav .sk_con li a {
+    font-family: 'icomoon';
+}
+.nav .sk_con li:first-child {
+    margin-left: 28px;
+}
+
+
+
+/* 列表页主体盒子 */
+.sk_container .sk_hd img {
+/* 头部图片 */
+    width: 100%;
+    margin: -2px 0 25px;
+}
+
+.sk_container .sk_bd ul li {
+/* body部分的所有li */
+    position: relative;
+    float: left;
+    width: 290px;
+    height: 460px;
+    margin-top: -1px;
+    margin-right: 13px;
+    border: 1px solid transparent;
+}
+.sk_container .sk_bd ul li:nth-child(4n) {
+/* 清除每行最后一个li的右外边距 */
+    margin-right: 0;
+}
+.sk_container .sk_bd ul li:hover {
+    border: 1px solid #e12228;
+}
+.sk_container .sk_bd ul li img {
+/* 图片居中 */
+/* 此处text-align: center;无效 */
+    display: block;
+    margin: 0 auto;
+}
+.sk_container .sk_bd ul li h5 {
+    font-size: 14px;
+    font-weight: normal;
+    /* 或 padding: 6px 10px 3px; */
+    margin: 6px 10px 3px;
+}
+.sk_container .sk_bd ul li .sk_goods_price em {
+    font-size: 22px;
+    margin-left: 10px;
+    color: #e60012;
+}
+.sk_container .sk_bd ul li .sk_goods_price del {
+    font-size: 12px;
+    color: #a4a4a4;
+    margin-left: 7px;
+    margin-bottom: 12px;
+}
+.sk_container .sk_bd .sk_goods_progress {
+    font-size: 14px;
+    margin-left: 10px;
+}
+.sk_container .sk_bd .sk_goods_progress .bar {
+    display: inline-block;
+    width: 130px;
+    height: 10px;
+    border: 1px solid #e12228;
+    border-radius: 7px;
+    margin: 0 6px;
+}
+.sk_container .sk_bd .sk_goods_progress .bar_in {
+    width: 87%;
+    height: 8px;
+    background-color: #ed282e;
+}
+.sk_container .sk_bd .sk_goods_progress em {
+    font-size: 16px;
+    color: #e12228;
+}
+
+.sk_container .sk_bd ul li .sk_goods_buy {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    background-color: #b1191a;
+}
+
+.page {
+/* 列表页的分页 */
+    margin: 55px 0;
+    /* 里面的文字内容 行内块 行内元素都可以居中水平对齐 */
+    text-align: center;
+}
+.sk_container .page .page_num a,
+.sk_container .page .page_skip input,
+.sk_container .page .page_skip button {
+    font-size: 12px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+.sk_container .page .page_num a {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    margin-right: 3px;
+}
+.sk_container .page .page_num .pn_prev,
+.sk_container .page .page_num .pn_next {
+    width: 85px;
+}
+.sk_container .page .page_num .current,
+.sk_container .page .page_num .dotted {
+    border: none;
+    background-color: transparent;
+}
+.sk_container .page .page_num .current {
+    color: #b1191a;
+}
+.sk_container .page .page_skip input {
+    margin: 0;
+    width: 48px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    background-color: transparent;
+    transition: all .3s;
+}
+.sk_container .page .page_skip input:focus {
+/* 表单获得焦点 */
+    width: 66px;
+    border-color: skyblue;
+}
+
+.sk_container .page .page_skip button {
+    width: 54px;
+    height: 36px;
+    font-size: 14px;
+    margin-left: 2px;
+    color: #000;
+}
+.sk_container .page .page_skip button:hover {
+    background-color: #ccc;
+    color: white;
+}
